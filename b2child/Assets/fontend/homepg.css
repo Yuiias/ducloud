@@ -1,0 +1,423 @@
+/**
+@ 以下为首页样式文件
+@ The following is the first page style file
+@ Update：2021-05-25
+@ By 度+ DuGree Plus
+**/
+
+/** 首页专题 **/
+.home-collection-image {
+    width: 60%;
+}
+
+
+/** 封面动态 **/
+.post-module-thumb img {
+	cursor:pointer;
+	transition:all 0.4s;
+}
+
+.post-module-thumb img:hover{
+    filter: brightness(50%);
+	transform:scale(1.2);
+}
+
+
+/*封面标题伪类*/
+.post-info h2:hover {
+	color: #00a1d6;
+}
+
+.post-list-meta-avatar img {
+    width: 22px;
+    height: 22px;
+}
+
+.b2_gap > li:hover .post-info h2 a {
+    color: #00a1d6;
+}
+
+
+/*首页支付权限图标*/
+.post-pay-type .post-pay-type-icon {
+    background: #fff;
+    border-radius: 50px;
+    color: #333;
+    border-radius: 2rem 0px 0px 2rem;
+    padding: 2px 3px;
+    margin-right: 0;
+    padding-right: 5px;
+    text-shadow: none;
+}
+
+.post-pay-type .authority {
+    padding: 2px 4px;
+    background: #FFC107;
+    border-radius: 0px 2rem 2rem 0px;
+}
+
+
+/*滚动文字公告*/
+.user-w-announcement .line{
+    height: 30px;
+    line-height: 30px;
+    list-style: none; 
+    overflow: hidden;
+}
+
+.user-w-announcement .line li {
+    height: 30px;
+    top: -61px;
+    position: relative;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+.user-w-announcement li a::before {
+    display: none;
+}
+
+.user-w-announcement {
+    padding: 0;
+}
+
+.user-w-announcement li a {
+    padding-left: 0;
+    top: -17px;
+}
+
+
+/*菜单更新数量样式*/
+.num {
+    position: absolute;
+    top: 10px;
+    display: block;
+    right: -5px;
+    color: #fff!important;
+    border-radius: 2px;
+    line-height: 14px;
+    text-align: center;
+    font-family: Calibri;
+    background: #FB7299;
+    font-size: 15px;
+    min-width: 28px;
+}
+
+.depth-0 a[href^="/"] > span .num, .depth-0 a[href^="https://www.duplus.pro/gif"] > span .num, .menu-item a[href^="/sitemap.xml"] > .num, .menu-item a[href^="#"] > .num {
+	display: none;
+}
+
+
+/*让B2消息提醒更明显*/
+@keyframes myAnimation {
+  0% {
+    opacity: 0.2
+  }
+  50%{
+    opacity: 1 
+  }
+  100% {
+    opacity: 0.2
+  }
+}
+ 
+.bar-mark {
+  animation: myAnimation 1s infinite
+}
+
+
+/*首页幻灯*/
+#jssor_1 {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 380px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.duplus-slider {
+    position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.duplus-slider-box {
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.duplus-slider-box img {
+	animation-name: duplus-slider-box;
+	animation-duration: 1.6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+	from {
+	transform: rotate(0deg);
+}
+
+to {
+	transform: rotate(360deg);
+}
+
+}
+
+.duplus-left {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+
+.duplus-left .i {
+	position: absolute;
+	color: #fff;
+	font-family: "Helvetica neue",Helvetica,Arial,sans-serif;
+	text-align: center;
+	cursor: pointer;
+	z-index: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.duplus-left .i .svg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.duplus-left .i .n {
+	display: none;
+}
+
+.duplus-left .i .b {
+	fill: #fff;
+	stroke: #00a1d6;
+	stroke-width: 500;
+	stroke-miterlimit: 10;
+	stroke-opacity: .5;
+}
+
+.duplus-left .i:hover .b {
+	fill: #f45a8d;
+	stroke: #f45a8d;
+	stroke-width: 6000;
+	stroke-opacity: 1;
+}
+
+.duplus-left .iav .b {
+	fill: #000;
+	stroke-width: 6000;
+	stroke-opacity: 1;
+}
+
+.duplus-left .i.idn {
+	opacity: .3;
+}
+
+.duplus-left .iav .n, .duplus-left .i:hover .n {
+	display: block;
+}
+
+.duplus-right {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 268px;
+    height: 380px;
+    overflow: hidden;
+    cursor: default;
+    background: #ffffff59;
+}
+
+.duplus-right .p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid rgba(255,255,255,.2);
+	box-sizing: border-box;
+	color: #fff;
+	background: #191919b0;
+	opacity: .7;
+    width: 268px;
+    height: 68px;
+}
+
+.duplus-right .p .t {
+	position: absolute;
+	padding: 10px;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 24px;
+	overflow: hidden;
+}
+
+.duplus-right .p .i {
+	margin-right: 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 96px;
+	height: 48px;
+	border: none;
+	float: left;
+}
+
+.duplus-right .pav,.duplus-right .p:hover {
+    color: #000;
+    background: #a9a9a9ed;
+}
+
+.duplus-right .p:hover {
+	opacity: .75;
+}
+
+.duplus-right .pav,.duplus-right .p: hover.pdn {
+	opacity: 1;
+}
+
+.duplus-right .ti {
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.duplus-right .ti i {
+    vertical-align: -2px;
+    font-size: 20px;
+}
+
+.duplus-right .d {
+	position: relative;
+	font-size: 12px;
+}
+
+
+/*分类内页搜索框*/
+.tax-info-item .fliter-button {
+    display: none;
+}
+
+.tax-search input{
+    border-radius: 25px;
+    padding: 15px 10px 15px 38px;
+}
+
+.tax-search{
+    width:50%;
+}
+
+.tax-search button{
+    top: 1px;
+    padding: 12px 10px;
+}
+
+.tax-header .tax-info {
+    display: block;
+}
+
+.tax-title h1 {
+    display: none;
+}
+
+.post-6-table .post-list-cat {
+    position: relative;
+    bottom: 5px;
+}
+
+.post-6-table .post-list-meta-avatar {
+    position: relative;
+    top: 5px;
+}
+
+
+/*分类表格超链接*/
+.post-6-table .post-6-title a:hover, .post-6-table .post-6-duplus_anchor a:hover {
+    color: #00a1d6;
+}
+
+/*右上角个人信息*/
+.top-user-avatar img, .top-user-box-drop .avatar, .gold-top-list .gold-top-avatar img, .mission-page-list li .avatar {
+    border-radius: 50px;
+}
+
+.top-user-name .user-data {
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    color: #99a2aa;
+    font-weight: 500;
+    font-size: 12px;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+
+/*签到页面*/
+.custom-page-row.gold-row {
+    width: auto;
+    margin-top: 20px;
+}
+
+.modal-content .custom-page-row.gold-row {
+    width: auto;
+    margin-bottom: 10px;
+    background-color: #F5F6F7;
+}
+
+.modal-content .gold-row span > b {
+    color: #FB7299;
+}
+
+.modal-content  .custom-page-row.gold-row + .custom-page-row.gold-row {
+    border-left: 0;
+}
+
+.mission-page-list li .avatar, .mission-page-user-left > a {
+    width: 45px;
+    height: 45px;
+}
+
+
+/** 发布页打字 **/
+.dus-notice {
+    background-color: #fb7299;
+    border: 1px solid #fb7299;
+    color: #fff;
+    padding: 12px 30px 10px 40px;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    position: relative;
+    letter-spacing: .08rem;
+}
+
+.dus-notice i {
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-size: 22px;
+}

@@ -1,0 +1,175 @@
+/**
+@ 以下为自定义会员特权介绍页面样式文件
+@ The following is the custom member privileges page style file
+@ Update：2021-05-29
+@ By 度+ DuGree Plus
+**/
+
+.explain-header-wrapper {
+    width: 100%;
+    height: 300px;
+    background: #000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(//pic.rmb.bdstatic.com/bjh/96f8db6b2693f57fdc7c38c5db2fefb0.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.big-explain-content {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 9px;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.big-explain-list-wp {
+    margin-top: 60px;
+}
+
+.common-title-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.common-title-left-icon {
+    width: 37px;
+    height: 4px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAICAYAAABeQGkWAAAABGdBTUEAALGPC/xhBQAAAaZJREFUSA3tlkmOIjEQRT2kSyDBGVjBjThGLepa3KAPwVVgwQLElPXfx1HKlnpZi16QkuWIP4SdAbIzj+NY9vt9PZ1ONaU0LJfL+ng8BuXDbDYjNv58Pj231urlcqk55wF91XO/3wfxhRxcNV0DjlicMThqs2b45QneGNoJ5rjnXlNe+/tMbI1m7495gnld/BMcfUHTddZMePvJpYPj+WLxvNls2GQtpdTz+VzUiDKfz3MvSAPMy1D0oo47l2mQcMrYD971YKG3B684a8NPzfCrFpsr1Oy64MjNhRYfhdDH3GN78U85aWhA1Ita1oKjnYx4d+ZR44/G+3l34N2Bdwf+2w5wWP36s9vt6mKxGFarVTscDk2XRNNh2m6324cW42ZsuimN6YBvYDrAP9CRK4YDazporYuYnIGOOj23X3UiZ+Z2c61/zfCs2TluN8e93o9fedb45KT/9We73Y7r9Todj8esLwT/GLpNkzbGDZKu12vSZ0ZS4xJfEHpha7Qh82DoOp7VFLxAKTRqqnOg8Gu2DwxSWqi//gyhgeual+jl/fFjCw26bwnaZhn5OGO9AAAAAElFTkSuQmCC) no-repeat;
+    background-size: 100% 100%;
+}
+
+.common-title-txt {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 24px;
+    color: #212121;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.common-title-right-icon {
+    width: 37px;
+    height: 4px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAICAYAAABeQGkWAAAABGdBTUEAALGPC/xhBQAAAaZJREFUSA3tlkmOIjEQRT2kSyDBGVjBjThGLepa3KAPwVVgwQLElPXfx1HKlnpZi16QkuWIP4SdAbIzj+NY9vt9PZ1ONaU0LJfL+ng8BuXDbDYjNv58Pj231urlcqk55wF91XO/3wfxhRxcNV0DjlicMThqs2b45QneGNoJ5rjnXlNe+/tMbI1m7495gnld/BMcfUHTddZMePvJpYPj+WLxvNls2GQtpdTz+VzUiDKfz3MvSAPMy1D0oo47l2mQcMrYD971YKG3B684a8NPzfCrFpsr1Oy64MjNhRYfhdDH3GN78U85aWhA1Ita1oKjnYx4d+ZR44/G+3l34N2Bdwf+2w5wWP36s9vt6mKxGFarVTscDk2XRNNh2m6324cW42ZsuimN6YBvYDrAP9CRK4YDazporYuYnIGOOj23X3UiZ+Z2c61/zfCs2TluN8e93o9fedb45KT/9We73Y7r9Todj8esLwT/GLpNkzbGDZKu12vSZ0ZS4xJfEHpha7Qh82DoOp7VFLxAKTRqqnOg8Gu2DwxSWqi//gyhgeual+jl/fFjCw26bwnaZhn5OGO9AAAAAElFTkSuQmCC) no-repeat;
+    background-size: 100% 100%;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.explain-item-wrapper {
+    margin-top: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.explain-header-vip-btn {
+    margin-top: 31px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 8px 50px;
+    border: 1px solid #ffffff;
+    height: 43px;
+    border-radius: 6px;
+    font-family: MicrosoftYaHei;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.explain-header-vip-btn:hover {
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.explain-item-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+.explain-item-bg-1 {
+    background: #f2fafd;
+}
+
+.explain-item-bg-2 {
+    background: #fff7f9;
+}
+
+.explain-item-content-img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.explain-item-content-name {
+    margin-top: 14px;
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    color: #212121;
+}
+
+.explain-item-content-desc {
+    margin-top: 7px;
+    margin-bottom: 26px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #999999;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.explain-item-content-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+.common-title-wrapper {
+    width: 100%;
+}
+}

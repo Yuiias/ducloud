@@ -1,0 +1,310 @@
+/**
+@ 以下为自定义个人主页样式文件
+@ The following is the custom personal home page style file
+@ Update：2021-05-25
+@ By 度+ DuGree Plus
+**/
+
+@media screen and (min-width: 768px){
+.user-panel .avatar {
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    min-width: 64px;
+    border: 2px solid #fff;
+    top: 50px;
+}
+
+.h-f-btn {
+    background: rgba(0,0,0,.45)!important;
+    box-shadow: 0 0 0 2px hsl(0deg 0% 100% / 30%);
+    border-radius: 4px;
+    color: #fff!important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    margin: 0 20px 17px 0;
+    margin-left: 0;
+    border: 0;
+}
+
+.h-follow {
+    background: #f25d8e!important;
+    box-shadow: 0 0 0 2px #fff;
+    color: #fff;
+}
+
+
+/*个人主页超级大会员标识*/
+.user-panel-info .duplus-mark {
+    top: -1px;
+    margin-left: 0px;
+    margin-right: 55px;
+}
+}
+
+.mask-wrapper {
+    filter: brightness(50%);
+    padding-top: 20%;
+    transform: scale(1.2);
+    overflow: hidden;
+    background-image: url('/Assets/fontend/users.php');
+}
+
+.user-panel {
+    margin-top: -175px;
+    top: 10px;
+    left: -10px;
+    padding: 0 30px 30px 30px;
+}
+
+.user-panel .avatar, .editor-avatar, .following-avatar img, .user-w-avatar img, .mission-today-list img, .widget-comment-user-left img {
+    border-radius: 100%;
+}
+
+.name {
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.user-panel-info h1 {
+    margin-bottom: 10px;
+}
+
+.user-panel-info h1 span {
+    margin-right: 10px;
+}
+
+.bd-sign {
+    color: #d6dee4;
+    font-size: 12px;
+    line-height: 26px;
+    height: 26px;
+    width: 740px;
+    font-weight: 700;
+    padding: 0 10px;
+    right: 10px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Arial;
+}
+
+.user-panel-info {
+    font-weight: inherit;
+}
+
+.author-page-right .user-sidebar-info:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00a1d640;
+    bottom: -2px;
+    left: 100%;
+    width: 0;
+    -webkit-transition: width 350ms, left 350ms;
+    -moz-transition: width 350ms, left 350ms;
+    transition: width 350ms, left 350ms;
+}
+
+.author-page-right .user-sidebar-info:hover:after {
+    left: 0;
+    width: 100%;
+    -webkit-transition: width 350ms;
+    -moz-transition: width 350ms;
+    transition: width 350ms;
+}
+
+.user-panel-editor-button {
+    top: 50px;
+}
+
+.following-info{
+    position: relative;
+    top: 20px;
+}
+
+.following-name {
+    margin-bottom: 20px;
+}
+
+.following-cancel{
+    position: relative;
+    top: 35px;
+}
+
+/*用户关注页面*/
+.hidden-line .avatar-parent {
+    top: -35px;
+    margin-left: 0px;
+}
+
+.user-s-info-avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.user-search-list li .avatar {
+    display: block;
+    width: 35%;
+    margin: auto;
+    border: 5px solid #fff;
+    border-radius: 100%;
+}
+
+.user-s-info-name {
+    margin: auto;
+    position: relative;
+    top: -15px;
+}
+
+.user-s-data {
+    margin-top: 15px;
+}
+
+.hidden-line hr {
+    height: 1px;
+    background-image: url(//pic.rmb.bdstatic.com/bjh/545047c7381cefc76780168b62dbdc79.png);
+}
+
+.user-s-follow .empty, .user-s-follow .author-has-follow {
+    background: #f25d8e!important;
+    box-shadow: 0 0 0 2px #e6e6e6;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.user-s-follow button + button {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.user-info td {
+    text-align: center;
+    width: 80px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.border-info {
+    border-right: 1px solid transparent!important;
+}
+
+.user-counter-key {
+    color: #99a2aa;
+}
+
+.user-counter-value {
+    font-size: 14px;
+    color: #66757a;
+}
+
+.user-s-follow button {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/*手机端*/
+@media screen and (max-width: 768px){
+#author-index .user-info p span {
+    display: initial;
+}
+
+.mask-wrapper {
+    padding-top: 55%;
+    filter: brightness(50%);
+}
+
+.user-panel {
+    top: -5px;
+    left: 0px;
+    margin-top: -170px;
+    padding: 0 10px 10px;
+}
+
+.user-panel-info {
+    padding-left: 10px;
+    padding-top: 5px;
+    align-items: initial;
+}
+
+.user-panel-info h1 {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.user-panel-info h1 > span > a{
+    vertical-align: bottom;
+}
+
+.bd-basic-spacing {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bd-sign {
+    width: 230px;
+}
+
+.user-panel-editor-button {
+    top: -30px;
+}
+
+.h-f-btn {
+    background: rgba(0,0,0,.45)!important;
+    box-shadow: 0 0 0 2px hsl(0deg 0% 100% / 30%);
+    border-radius: 4px;
+    color: #fff!important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    margin: 0 20px 17px 0;
+    margin-left: 0;
+    border: 0;
+}
+
+.h-follow {
+    background: #f25d8e!important;
+    box-shadow: 0 0 0 2px #fff;
+    color: #fff;
+}
+
+.following-info {
+    top: 5px;
+}
+
+.following-name {
+    margin-bottom: 10px;
+}
+
+
+.user-s-info-desc {
+    padding: 7px;
+}
+
+.user-info td {
+    width: auto;
+}
+
+.user-panel-info .duplus-mark {
+    margin-left: -2px;
+}
+
+.user-panel-info h1 span {
+    margin-right: 8px;
+}
+}

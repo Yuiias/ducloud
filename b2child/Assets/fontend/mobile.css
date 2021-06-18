@@ -1,0 +1,158 @@
+/**
+@ 以下为自定义全局手机端样式文件
+@ The following is the custom global handset style file
+@ Update：2021-05-25
+@ By 度+ DuGree Plus
+**/
+
+@media screen and (max-width: 768px){
+/** 评论区开始 **/
+.comment-vote-hidden > span {
+    margin-right: 13px;
+}
+
+.comment-footer-tools .comment-vote-hidden .comment-up, .comment-footer-tools .comment-vote-hidden .comment-down {
+    top: -1px;
+}
+
+
+/** 资源详细表 **/
+.entry {
+    font-size: x-small;
+}
+
+
+/** 文章内页手机端 **/
+.single-article h1 {
+    font-size: 16px;
+}
+
+.post-style-1 .single-bottom-html {
+    margin-bottom: -10px!important;
+}
+
+
+/** 滚动公告 **/
+.user-w-announcement .line i {
+    top: 12px;
+}
+
+
+/** 分类内页搜索框 **/
+.tax-search.tax-info-item {
+    top: 10px;
+}
+
+
+/** 正版提示 **/
+.btn-pay-wrapper {
+    width: 100%;
+    margin: 20px 20px 20px 0px;
+    position: relative;
+    float: left;
+}
+
+.post-style-5 .line li {
+    width: 100%;
+    font-size: 13px;
+}
+
+.post-video-list ul {
+    height: calc(100% - 62px);
+}
+
+.comments-box .respond {
+    height: 145px;
+}
+
+.com-form-textarea {
+    position: relative;
+}
+
+.com-form-textarea button {
+    width: auto;
+    height: auto;
+    float: right;
+    top: 10px;
+}
+
+.comments-box .com-form > .b2-radius {
+    overflow: revert;
+}
+
+.OwO .OwO-logo {
+    left: 0px;
+    margin-top: 15px;
+}
+
+
+/** 表格 **/
+.post-6-table table td {
+    vertical-align: middle;
+}
+
+.post-6-table .post-list-cat {
+    top: 4px;
+}
+
+.post-6-table .post-list-meta-avatar {
+    top: 1px;
+}
+
+
+/** 有话不说憋着难受 **/
+.comment-form {
+    display: block;
+}
+
+
+.login-button .up-new {
+    display: none;
+}
+
+
+/** 会员页面 **/
+.vip-item {
+    width: 80%;
+}
+
+
+/** 超级大会员标识 **/
+.children .duplus-mark {
+    display: none;
+}
+
+.duplus-mark {
+    min-width: 8px;
+    border-radius: 9px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.duplus-honor-神 {
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 152, 0), rgb(255, 193, 7)) !important;
+}
+
+
+/** pre标签 **/
+.entry-content pre code, .content-show-roles pre code {
+    white-space: pre-wrap;
+}
+
+
+/** 更新数量 **/    
+.num { 
+	top: 17px;
+    right: 215px;
+    font-size: 13px;
+}
+}

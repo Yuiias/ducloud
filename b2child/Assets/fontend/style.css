@@ -1,0 +1,439 @@
+/**
+@ 以下为自定义Style样式文件
+@ The following is a custom style file
+@ Update：2021-05-24
+@ By 度+ DuGree Plus
+**/
+
+.night .site {
+    background: #000000;
+}
+
+
+/** 全局伪类 **/
+[data-microtip-position|="bottom"]:before {
+    transform: translate3d(-50%, -10px, 0);
+    bottom: auto;
+    left: 50%;
+    top: 100%;
+}
+
+[data-microtip-position|="bottom"]:before {
+    background: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba%2817,%2017,%2017,%201%29%22%20transform%3D%22rotate%28180%2018%206%29%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E) no-repeat;
+    height: 6px;
+    width: 18px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+[data-microtip]:before {
+    background-size: 100% auto !important;
+    content: "";
+}
+
+[data-microtip]:before, [data-microtip]:after {
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--microtip-transition-duration, .18s) var(--microtip-transition-easing, ease-in-out) var(--microtip-transition-delay, 0s);
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 999999;
+    transform-origin: top;
+}
+
+[data-microtip-position|="bottom"]:after {
+    transform: translate3d(-50%, -10px, 0);
+    top: 100%;
+    left: 50%;
+}
+
+[data-microtip-position|="bottom"]:after {
+    margin-top: 20px;
+}
+
+[data-microtip]::after {
+    color: rgb(255, 255, 255);
+    content: attr(data-microtip);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: shuzi, "PingFang SC", 微软雅黑, "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+    white-space: nowrap;
+    box-sizing: content-box;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px 0px;
+    line-height: 1.2;
+    background: rgba(17, 17, 17, 0.9);
+    border-radius: 4px;
+    padding: 0.5em 1em;
+}
+
+[data-microtip]:hover:before, [data-microtip]:hover:after {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+[data-microtip] {
+    position: relative;
+}
+
+/** 全局伪类结束 **/
+
+/*************************/
+
+/*首页广告模块标*/
+.duplus_imgad .duplus-adgo {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 3.2em;
+    background: #00a1d6;
+    border-radius: 3px;
+    color: #fff;
+    opacity: 1;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.duplus_imgad img:hover {
+    filter: brightness(50%);
+}
+
+.duplus_imgad .duimg {
+    transition: 0.5s;
+}
+
+.duplus_imgad .img-info {
+    position: absolute;
+    right: 12px;
+    top: 30px;
+    padding: 0;
+    text-align: right;
+    color: #fff;
+}
+
+.duplus_imgad .img-info .info {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 0;
+    padding: 5px 0;
+    cursor: pointer;
+    overflow: hidden;
+    background: #fb7299;
+    border-radius: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    white-space: nowrap;
+    -webkit-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    -moz-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    -ms-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    -o-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+}
+
+.duplus_imgad:hover .info {
+    width: auto;
+    padding: 5px 12px 5px 12px;
+    -webkit-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    -moz-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    -ms-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    -o-transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    transition: all 0.2s cubic-bezier(0, 0.34, 0.71, 1.26) !important;
+    font-size: 12px;
+    z-index: 1;
+}
+
+/*首页广告模块标结束*/
+
+/*************************/
+
+/** 等级表开始 **/
+.up-info-holder .fixed-box .up-info-block .up-info-right-block .level {
+    width: 19px;
+    height: 17px;
+    vertical-align: middle;
+    margin: 0 8px;
+    background-size: cover;
+}
+
+.bd-lv {
+    font-size: 21px;
+    font-weight: 400;
+    text-indent: 10px;
+    letter-spacing: 5px;
+}
+
+.icon-lv0 {
+    color: #bfbfbf;
+}
+
+.icon-lv1 {
+    color: #bfbfbf;
+}
+
+.icon-lv2 {
+    color: #95ddb2;
+}
+
+.icon-lv3 {
+    color: #92d1e5;
+}
+
+.icon-lv4 {
+    color: #ffb37c;
+    font-size: 20px;
+}
+
+.icon-lv5 {
+    color: #ff6c00;
+    font-size: 20px;
+}
+
+.icon-lv6 {
+    color: red;
+    font-size: 20px;
+}
+
+.icon-lv7 {
+    color: #e52fec;
+    font-size: 20px;
+}
+
+.icon-lv8 {
+    color: #841cf9;
+}
+
+.bd-level {
+	height: 16px;
+    line-height: 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+    margin-top: 5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.bd-level[lvl="Lv0"] {
+    background: #bfbfbf;
+}
+
+.bd-level[lvl="Lv1"] {
+    background: #bfbfbf;
+}
+
+.bd-level[lvl="Lv2"] {
+    background: #95ddb2;
+}
+
+.bd-level[lvl="Lv3"] {
+    background: #92d1e5;
+}
+
+.bd-level[lvl="Lv4"] {
+    background: #ffb37c;
+}
+
+.bd-level[lvl="Lv5"] {
+    background: #ff6c00;
+}
+
+.bd-level[lvl="Lv6"] {
+    background: red;
+}
+
+.bd-level[lvl="Lv7"] {
+    background: #e52fec;
+}
+
+.bd-level[lvl="Lv8"] {
+    background: #841cf9;
+}
+
+.bd-level[lvl=小黑屋] {
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    margin-top: 11px;
+    background-color: #000000;
+    vertical-align: middle;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.bd-level[lvl=游客] {
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    margin-top: 11px;
+    background-color: #946565;
+    vertical-align: middle;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/*大会员标志*/
+.h-vipType {
+    height: 16px;
+    line-height: 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    padding: 0 5px;
+    margin-top: 5px;
+    background-color: #f45a8d;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/** 等级表结束 **/
+
+
+/** 会员红名 **/
+.duplus-vps {
+    color: #FB7299!important;
+}
+
+
+/*认证服务图标*/
+i.b2-vrenzhengguanli {
+    position: absolute;
+    bottom: 0px;
+    right: -4px;
+    font-weight: 400;
+    line-height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    font-size: 20px;
+    color: #ff3a55!important;
+}
+
+.gold-top-avatar i.b2-vrenzhengguanli {
+    bottom: -4px;
+}
+
+/*登录 of 注册*/
+.login-button .header-login-button b {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    -webkit-transform: translate(50%,-50%);
+    -ms-transform: translate(50%,-50%);
+    transform: translate(50%,-50%);
+    height: 15px;
+    width: 15px;
+    line-height: 1.1;
+    text-align: center;
+    background: #fff;
+    color: #81c483;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 11px;
+    border: 2px solid #e7e7e7;
+    font-weight: 400;
+    z-index: 12;
+}
+
+.header-login-button .empty, .header-login-button .mobile-hidden {
+    border-radius: 4px;
+    background-color: #e6e6e69e!important;
+    padding: .3em .8em;
+    font-size: 0.9em;
+    color: #888888;
+}
+
+.header-login-button button {
+    margin-left: 5px;
+    border: 1px solid transparent;
+}
+
+.header-login-button .empty:hover {
+    color: #fff;
+    background-color: #FB7299!important;
+}
+
+.header-login-button .register:hover {
+    color: #fff;
+    background-color: #00a1d6!important;
+}
+
+.login-button .up-new {
+    position: absolute;
+    width: 54px;
+    height: 34px;
+    top: -9px;
+    top: -5px;
+    right: -52px;
+    background: url(//pic.rmb.bdstatic.com/bjh/c153092483951ac8226f07f7f5aa8839.png) no-repeat;
+    z-index: 20;
+}
+
+
+/*密码安全度*/
+.safe_window {
+    width: 100%;
+    color: #ccc;
+    border-radius: 3px;
+    line-height: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+    /*font-weight: 700;*/
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.safe_window p {
+    float: left;
+}
+
+.safe_window .pwd {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-top: 9px;
+    margin-right: 10px;
+    float: left;
+}
+
+.safe_window .bc0001 {
+    background: red;
+}
+
+.safe_window .ff9537 {
+    background: #ff7f00;
+}
+
+.safe_window .b5dc05 {
+    background: #49c519;
+}
+
+.safe_window span {
+    left: 0;
+    top: 5px;
+    font-size: 12px;
+    float: right;
+    position: relative;
+}
+
+/*菜单箭头旋转*/
+.has_children:hover a i.b2-jt-down {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

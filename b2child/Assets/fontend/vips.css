@@ -1,0 +1,72 @@
+/**
+@ 以下为自定义会员页面样式文件
+@ The following is a custom article comment style file
+@ Update：2021-05-27
+@ By 度+ DuGree Plus
+**/
+
+.vip-top {
+    background: none;
+}
+
+.vip-item .recommend{
+    display: block;
+    width: 44px;
+    height: 45px;
+    background: url(//pic.rmb.bdstatic.com/bjh/a600e4d166e82b3c1e5e0ee3062b46d6.png) -10px -10px no-repeat;
+    position: absolute;
+  	z-index: 1;
+}
+
+.vip-price-money {
+    text-align: center;
+    font-size: 28px;
+    color: #99a2aa;
+    margin-bottom: 10px;
+}
+
+.vip-allow.allow {
+    color: #99a2aa;
+}
+
+.vip-price {
+	display: block;
+    border-bottom: 1px dashed #D2D2D2;
+    padding-bottom: 25px;
+}
+
+.vip-price-money span{
+	font-size: 14px;
+    font-weight: 500;
+    color: #0EC5A1;
+}
+
+.vip-price-money original {
+	font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.vip-price-day {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin: 10px;
+}
+
+.vip-buy a {
+    display: block;
+    width: 114px;
+    margin: auto;
+    line-height: 32px;
+    color: #00a1d6;
+    border: 1px solid #00a1d6;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.vip-buy a:hover {
+    background: #00a1d6;
+    color: #fff;
+}

@@ -1,0 +1,124 @@
+/**
+@ 以下为自定义文章模块5样式文件
+@ The following is the custom article module 5 style file
+@ Update：2021-05-27
+@ By 度+ DuGree Plus
+**/
+
+.post-video-list ul {
+    height: calc(440px - 62px);
+}
+
+/*原作介绍样式定义*/
+.duplazy img {
+    float: left;
+    width: 225px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+/*文章页面标签*/
+.media-tag {
+    font-size: 12px!important;
+    /*display: inline-block!important;*/
+    vertical-align: middle!important;
+    margin-right: 8px!important;
+    height: 22px!important;
+    padding: 0 4px!important;
+    line-height: 22px!important;
+    color: #6d6d6d!important;
+    border: 1px solid #a9a9a9!important;
+    border-radius: 3px!important;
+    margin-bottom: 26px!important;
+    background: none!important;
+}
+
+/*文章描述*/
+.inotlazy {
+    float: left;
+    color: #262626;
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.post-style-5 .entry-header {
+    border-bottom: solid 1px transparent;
+    background-color: transparent;
+}
+
+
+/*正版提示*/
+.btn-pay-wrapper {
+    position: relative;
+    float: left;
+    margin: 20px 20px 20px 0px;
+}
+
+.btn-pay-wrapper ul.pay-btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: #ffb500;
+    color: #fff;
+    text-indent: 55px;
+}
+
+.btn-pay-wrapper.vip-only li {
+    background-color: #00a1d6;
+}
+
+.btn-pay-wrapper .pic-wrapper {
+    background: url(//pic.rmb.bdstatic.com/bjh/a39896df863902e0fd1a96c053068fd8.png)no-repeat;
+    display: block;
+    position: absolute;
+    width: 68px;
+    height: 62px;
+    top: -17px;
+    left: 0;
+    cursor: pointer;
+}
+
+.post-video-table ul {
+    margin-top: 65px;
+}
+
+.su-table-responsive, .inotlazy img {
+    border-radius: 4px;
+}
+
+
+/*滚动文字公告*/
+.post-style-5 .line{
+    height: 30px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.post-style-5 .line li {
+    height: 30px;
+    text-indent: 25px;
+    line-height: 48px;
+    padding: 0 20px 0 45px;
+}
+
+.post-style-5 .line i{
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    color: #fb7299;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+.post-style-5 .line i {
+    top: 12px;
+}
+}
