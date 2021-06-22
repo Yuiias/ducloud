@@ -1977,8 +1977,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-	background-image: url(//pic.rmb.bdstatic.com/bjh/d4f08beb1311f6373f8cbf870acc59b8.jpeg);
-    /*background-image: url(images/model-bg.png);*/
+    /*background-image: url(//pic.rmb.bdstatic.com/bjh/d4f08beb1311f6373f8cbf870acc59b8.jpeg);*/
+    background-image: url(images/model-bg.png);
 }
 .top-user-info-box-name{
     display: flex;
